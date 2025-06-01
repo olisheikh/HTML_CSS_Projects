@@ -1,0 +1,65 @@
+body {
+    display:flex;
+    justify-content: center;
+    background-color:cadetblue;
+}
+
+label {
+    display:block;
+}
+
+h2 {
+    text-align:center;
+}
+
+.container {
+    max-width:500px;
+    padding:0 20px 15px;
+    background-color:aquamarine;
+    border-radius:5px;  
+}
+
+.sub-container {
+    background-color:whitesmoke;
+    margin:-10px;
+    padding:15px;
+    border:2px solid black;
+    border-radius:5px;
+}
+
+.general-info label {
+    margin: 5px 0 5px;
+}
+
+.general-info input {
+    width:90%;
+    padding:5px;
+}
+
+.drop-down {
+    margin:15px 0;
+}
+.drop-down select{
+    margin:5px 0;
+    width:80%;
+    padding:5px;
+}
+
+textarea {
+    display:block;
+    padding:5px;
+}
+
+.button{
+    text-align:center;
+    margin-top:10px;
+    padding:10px;
+}
+
+.button input {
+    width:300px;
+    background-color: aquamarine;
+    padding:8px 10px;
+    font-size:16px;
+    font-weight:bold;
+}

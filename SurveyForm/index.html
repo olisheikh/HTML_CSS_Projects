@@ -5,71 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="exam.png">
+    <link rel="stylesheet" href="style.css">
     <title>Survey form</title>
 </head>
 
 <body>
-    <header>
-        <h2>Survey Form</h2>
-    </header>
+    <div class="container">
+        <header>
+            <h2>Survey Form</h2>
+        </header>
+        <div class="sub-container">
+            <main>
+                <form action="" method="post">
 
-    <main>
-        <form action="" method="post">
+                    <!-- Information section -->
+                    <section class="general-info">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required><br>
 
-            <!-- Information section -->
-            <section>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" placeholder="Enter your name" required><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required><br>
 
-                <label for="email">Email</label><br>
-                <input type="email" id="email" placeholder="Enter your email" required><br>
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Enter your age">
+                    </section>
 
-                <label for="age">Age</label><br>
-                <input type="number" id="age" placeholder="Enter your age"><br>
-            </section><br>
+                    <!-- Drop down section -->
+                    <section class="drop-down">
+                        <label for="behavior">Which option is describe you best</label>
+                        <select name="behaviors" id="behavior">
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Doctor">Doctor</option>
+                        </select>
+                    </section>
 
-            <!-- Drop down section -->
-            <section>
-                <label for="behavior">Which option is describe you best</label><br>
-                <select name="behaviors" id="behavior">
-                    <option value="Student">Student</option>
-                    <option value="Teacher">Teacher</option>
-                    <option value="Doctor">Doctor</option>
-                </select>
-            </section>
-            <br>
 
-            <!-- Question section -->
-            <section>
-                <label for="recommend">Would you recommend GeeksforGeeks to a friend?<br>
-                    <input type="radio" id="yes" name="recommended" value="Yes">
-                    <label for="yes">Yes</label><br>
+                    <!-- Question section -->
+                    <section>
+                        <label for="recommend">Would you recommend GeeksforGeeks to a friend? <br>
+                            <input type="radio" id="yes" name="recommended" value="Yes">
+                            <label for="yes" style="display:inline;">Yes</label><br>
 
-                    <input type="radio" id="no" name="recommended" value="No">
-                    <label for="no">No</label><br>
+                            <input type="radio" id="no" name="recommended" value="No">
+                            <label for="no" style="display:inline;">No</label><br>
 
-                    <input type="radio" id="maybe" name="recommended" value="Maybe">
-                    <label for="maybe">Maybe</label><br>
-                </label>
-                <br>
-                <label for="language">
-                    Languages and Frameworks known<small>(Checks at that apply)</small> <br>
-                    <label for="c"> <input type="checkbox" id="c" name="languages" value="C">
-                        C</label><br>
-                    <label for="js"> <input type="checkbox" id="js" name="languages" value="JavaScript">
-                        JavaScript</label><br>
-                    <label for="py"> <input type="checkbox" id="py" name="languages" value="Python">
-                        Python</label><br>
-                </label>
-            </section>
-            <br>
-            <label for="suggestion">Any Comments and Suggestions</label><br>
-            <textarea rows="10" cols="50" id="suggestion" minlength="10" >Write down your valuable comments</textarea>
-            <br>
-            <input type="submit">
-        </form>
+                            <input type="radio" id="maybe" name="recommended" value="Maybe">
+                            <label for="maybe" style="display:inline;">Maybe</label>
+                        </label><br>
 
-    </main>
+                        <label for="language">
+                            Languages and Frameworks known<small>(Checks at that apply)</small>
+                            <label for="c"> <input type="checkbox" id="c" name="languages" value="C">
+                                C</label>
+                            <label for="js"> <input type="checkbox" id="js" name="languages" value="JavaScript">
+                                JavaScript</label>
+                            <label for="py"> <input type="checkbox" id="py" name="languages" value="Python">
+                                Python</label>
+                        </label>
+                    </section><br>
+
+                    <label for="suggestion" style="margin-bottom:5px;">Any Comments and Suggestions</label>
+                    <textarea rows="4" cols="50" id="suggestion"
+                        minlength="10">Write down your valuable comments</textarea>
+
+                    <div class="button">
+                        <input type="submit">
+
+                    </div>
+                </form>
+
+            </main>
+        </div>
+
+    </div>
 
 </body>
 
